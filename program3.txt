@@ -1,0 +1,53 @@
+//create a folder and add two java files
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~
+$ cd desktop
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop (master)
+$ cd huda-dev
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git init
+Initialized empty Git repository in C:/Users/Maham Kausar/Desktop/huda-dev/.git/
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git remote add origin https://github.com/Huda-Kausar17/hk.git
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git config --global user.email "hudakausar2517@gmail.com"
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git add .
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git commit -m "1.0"
+[master (root-commit) b53fa20] 1.0
+ 2 files changed, 135 insertions(+)
+ create mode 100644 GFG.java
+ create mode 100644 HelloWorld.java
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.60 KiB | 410.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Huda-Kausar17/hk.git
+ * [new branch]      master -> master
+
+//add jdk-17 and set path in environmental variables
+//install Jenkins open web browser and type http://localhost:8081
+//in dashboard install plugins for GitHub
+//create new freestyle project
+//click on created project under GitHub project paste url of repo
+//under source code management select git and paste the same url
+//under build setup choose execute windows batch command
+javac HelloWorld.java
+java HelloWorld
+javac GFG.java
+java GFG
+//click save then build now
+//open build and then click on console output
