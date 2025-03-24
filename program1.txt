@@ -1,0 +1,140 @@
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~
+$ cd desktop
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop (master)
+$ cd hk-dev
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git init
+Initialized empty Git repository in C:/Users/Maham Kausar/Desktop/hk-dev/.git/
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git remote add origin https://github.com/Huda-Kausar17/sak.git
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git config --global user.email "hudakausar2517@gmail.com"
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git add .
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git commit -m "1.0"
+[master (root-commit) d84f679] 1.0
+ 5 files changed, 138 insertions(+)
+ create mode 100644 Insertion-Sort-1.c
+ create mode 100644 Insertion-Sort-2.c
+ create mode 100644 Power sum.c
+ create mode 100644 Running time of algorithm.c
+ create mode 100644 Sherlock and cost.c
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.60 KiB | 410.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Huda-Kausar17/sak.git
+ * [new branch]      master -> master
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git add .
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git commit -m "1.1"
+[master 7bda309] 1.1
+ 1 file changed, 28 deletions(-)
+ delete mode 100644 Sherlock and cost.c
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 214 bytes | 214.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Huda-Kausar17/sak.git
+   d84f679..7bda309  master -> master
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git clone https://github.com/rukyam/sum.git
+Cloning into 'sum'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 5 (from 1)
+Receiving objects: 100% (6/6), done.
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git add .
+warning: adding embedded git repository: maham
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> maham
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached maham
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+warning: adding embedded git repository: sum
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git commit -m "1.2"
+[master e6925f2] 1.2
+ 2 files changed, 2 insertions(+)
+ create mode 160000 maham
+ create mode 160000 sum
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 276 bytes | 276.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Huda-Kausar17/sak.git
+   7bda309..e6925f2  master -> master
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git log
+commit e6925f2240a7627db6ecf6509d71d9b1262470fa (HEAD -> master, origin/master)
+Author: unknown <hudakausar2517@gmail.com>
+Date:   Sun Mar 23 14:10:42 2025 +0530
+
+    1.2
+
+commit 7bda3093bdd369931b3614305dfdb0b9d5053221
+Author: unknown <hudakausar2517@gmail.com>
+Date:   Sun Mar 23 14:07:51 2025 +0530
+
+    1.1
+
+commit d84f679bea35af63a5482486f2b6b0eb0c70c3a6
+Author: unknown <hudakausar2517@gmail.com>
+Date:   Sun Mar 23 14:06:44 2025 +0530
+
+    1.0
+
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/hk-dev (master)
+$ git reset --hard  7bda3093bdd369931b3614305dfdb0b9d5053221
+warning: unable to rmdir 'maham': Directory not empty
+warning: unable to rmdir 'sum': Directory not empty
+HEAD is now at 7bda309 1.1

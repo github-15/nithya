@@ -1,0 +1,22 @@
+JDK - 23 Installation:
+1. Install JDK-23 for windows and then set the path in the Environmental variables
+
+Docker Desktop installation for Windows:
+1. Install and download docker desktop for windows
+
+Configuration using Eclipse -IDE:
+1. Create folder eclipse-workspace in local disk C
+2. Open Eclipse-IDE click on Files, select switch workspace, choose others and then browse for folder name and then click launch.
+3. Eclipse IDE is launched again create project, under src create package, under package create two files one demo.java and the other Dockerfile in files
+4. Type the following commands in the Dorkerfile
+FROM openjdk:23
+WORKDIR /app
+COPY demo.java /app/package_name/demo.java
+RUN javac /app/package_name/demo,java
+CMD ["java", "package_name.demo"]
+5. Open Terminal and type the following commands 
+cd path
+docker build -t myapp . 
+docker image
+6. Open Docker desktop
+7. Under images run myapp.Output of the program will be displayed.

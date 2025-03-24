@@ -1,0 +1,161 @@
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~
+$ cd desktop
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop (master)
+$ cd huda-dev
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git init
+Initialized empty Git repository in C:/Users/Maham Kausar/Desktop/huda-dev/.git/
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git remote add origin https://github.com/Huda-Kausar17/hk.git
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git config --global user.email "hudakausar2517@gmail.com"
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git add .
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git commit -m "1.0"
+[master (root-commit) b53fa20] 1.0
+ 6 files changed, 135 insertions(+)
+ create mode 100644 Closest number.c
+ create mode 100644 Flipping bits.c
+ create mode 100644 Maximizing xor.c
+ create mode 100644 find the median.c
+ create mode 100644 ice cream parlor.c
+ create mode 100644 sum vs xor.c
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.60 KiB | 410.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Huda-Kausar17/hk.git
+ * [new branch]      master -> master
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git branch b1
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git checkout b1
+Switched to branch 'b1'
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b1)
+$ nano file1.txt
+//here type Hello!
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b1)
+$ git add .
+warning: in the working copy of 'file1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b1)
+$ git commit -m "1.1"
+[b1 d8a7751] 1.1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b1)
+$ git push origin master
+Everything up-to-date
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b1)
+$ git checkout master
+Switched to branch 'master'
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git branch b2
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (master)
+$ git checkout b2
+Switched to branch 'b2'
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2)
+$ nano file1.txt
+//here type Hi there!
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2)
+$ git add .
+warning: in the working copy of 'file1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2)
+$ git commit -m "1.2"
+[b2 996995b] 1.2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2)
+$ git push origin master
+Everything up-to-date
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2)
+$ git merge b1
+Auto-merging file1.txt
+CONFLICT (add/add): Merge conflict in file1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2|MERGING)
+$ git log --merge
+commit 996995b4eb6fb4c4b8b48e801475d94c9feaf904 (HEAD -> b2)
+Author: unknown <hudakausar2517@gmail.com>
+Date:   Sun Mar 23 13:46:33 2025 +0530
+
+    1.2
+
+commit d8a7751f25e9aa7b6ab13d29a705de8771f11da8 (b1)
+Author: unknown <hudakausar2517@gmail.com>
+Date:   Sun Mar 23 13:45:19 2025 +0530
+
+    1.1
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2|MERGING)
+$ git diff b1 b2
+diff --git a/file1.txt b/file1.txt
+index 10ddd6d..137d409 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1 +1 @@
+-Hello!
++Hi there!
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2|MERGING)
+$ nano file1.txt
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2|MERGING)
+$ git add .
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2|MERGING)
+$ git commit -m "v1"
+[b2 ebcb355] v1
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2)
+$ git push origin b2
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 729 bytes | 243.00 KiB/s, done.
+Total 9 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+remote:
+remote: Create a pull request for 'b2' on GitHub by visiting:
+remote:      https://github.com/Huda-Kausar17/hk/pull/new/b2
+remote:
+To https://github.com/Huda-Kausar17/hk.git
+ * [new branch]      b2 -> b2
+
+Maham Kausar@DESKTOP-MAHAM2517 MINGW64 ~/desktop/huda-dev (b2)
+$ git merge b1
+Already up to date.
+
